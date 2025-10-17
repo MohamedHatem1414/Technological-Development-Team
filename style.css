@@ -76,6 +76,9 @@ section {
 
 
 .main { 
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -88,7 +91,7 @@ section {
 
 
 .main h2 {
-    color: black;
+    color: rgb(253, 253, 253);
     font-size: 1.7em;
     font-weight: 500;
 }
