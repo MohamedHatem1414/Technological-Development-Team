@@ -9,6 +9,22 @@
 </head>
 <body>
 
+ <!-- شاشة البداية (الانترو) -->
+  <div id="intro">
+    <img src="images/LOGO.png" alt="شعار جماعة التطوير" class="intro-logo">
+  </div>
+
+  <script>
+    // الانترو تختفي بعد 3 ثواني
+    setTimeout(() => {
+      document.getElementById('intro').style.opacity = '0';
+      setTimeout(() => {
+        document.getElementById('intro').style.display = 'none';
+        document.getElementById('main-content').style.display = 'block';
+      }, 1000);
+    }, 3000);
+  </script>
+
     
     <header>
         <a href="#" class="logo">جماعة التطوير التكنولوجي </a>
