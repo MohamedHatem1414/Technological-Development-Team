@@ -250,6 +250,63 @@ img{
 }
 
 
+
+/* **CSS Code: Gallery Styling** */
+
+/* 1. تنسيق الحاوية الرئيسية (لإضافة هامش حول الكتالوج) */
+.gallery-container {
+    max-width: 1200px; /* تحديد أقصى عرض للكتالوج */
+    margin: 40px auto;  /* وضع الكتالوج في المنتصف مع مسافة علوية وسفلية */
+    padding: 0 20px;
+    background-color: #f0f0f5;
+}
+
+/* 2. إعداد الشبكة (Grid) للصور */
+.photo-grid {
+    display: grid;
+    /* هذا هو السر! يقوم بإنشاء أعمدة تتكرر وتتسع لتناسب أي حجم شاشة */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px; /* المسافة بين كل صورة وأخرى */
+}
+
+/* 3. تنسيق كل عنصر صورة داخل الشبكة */
+.photo-item {
+    overflow: hidden; /* لإخفاء أي جزء زائد من الصورة */
+    border-radius: 8px; /* حواف دائرية جميلة */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل خفيف لتحسين المظهر */
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    
+}
+
+/* تأثير عند مرور مؤشر الفأرة (Hover Effect) */
+.photo-item:hover {
+    transform: scale(1.05); /* تكبير الصورة قليلاً عند الوقوف عليها */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* 4. تنسيق الصورة نفسها (للتأكد من أنها تملأ العنصر وتظهر بشكل صحيح) */
+.photo-item img {
+    width: 100%; /* جعل الصورة تملأ عرض العنصر الحاوي لها بالكامل */
+    height: 300px; /* **يمكنك تعديل هذا:** لتحديد ارتفاع ثابت للصور */
+    object-fit: cover; /* لضمان أن الصورة تغطي المساحة المحددة دون تشوه */
+    display: block;
+}
+
+/* 5. تنسيق العناوين (اختياري) */
+.gallery-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 5px;
+}
+.gallery-container p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+
+
 .footer{
     background-color: #000016;
     color: white;
