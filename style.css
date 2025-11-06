@@ -428,22 +428,7 @@ img{
 }
 
 
-@media (max-width: 768px) {
-    header {
-        padding: 10px 20px; /* قلل المسافة */
-        flex-direction: column; /* خلى العناصر فوق بعض */
-    }
 
-    .navigation a {
-        padding-left: 10px; 
-        font-size: 1em; /* صغّر الخط شوية */
-    }
-
-    .logo {
-        font-size: 1.5em;
-        margin-bottom: 10px; /* مسافة بسيطة تحت اللوجو */
-    }
-}
 
 
 @media (max-width:641) {
@@ -467,6 +452,68 @@ img{
         font-size: 10px;
     }
 }
+
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    padding: 10px 15px;
+  }
+
+  .logo {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .navigation a {
+    font-size: 0.9em;
+    padding-left: 10px;
+  }
+
+  section {
+    padding: 60px 15px;
+  }
+
+  .main h2 {
+    font-size: 1.2em;
+  }
+
+  .main h2 span {
+    font-size: 1.6em;
+  }
+
+  .main h3 {
+    font-size: 1em;
+  }
+
+
+
+  .card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .testimonial-card p {
+    font-size: 0.95em;
+  }
+
+  .testimonial-card h4 {
+    font-size: 0.95em;
+  }
+
+  .title {
+    font-size: 1.5em;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+
 
 
 video{
